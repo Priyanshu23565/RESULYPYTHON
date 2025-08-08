@@ -1,0 +1,10 @@
+import random
+import string
+
+def generate_mixed_code(length=8):
+    chars = string.ascii_letters + string.digits  # A-Z, a-z, 0-9
+    code = ''.join(random.choice(chars) for _ in range(length))
+    return code
+
+# Use the function
+print("🔐 Generated Code:", generate_mixed_code())
